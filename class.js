@@ -1,14 +1,20 @@
-console.log("here Test");
+
 
 // Create an object to hold information on your favorite recipe. It should have properties for title (a string), servings (a number), and ingredients (an array of strings).
 const recipe = {
   title: "Mole",
   servings: 2,
-  ingredients: ["cumin", "cinnamon", "cocoa"],
+  ingredients: ["cumin", "cinnamon", "cocoa", "oil", "butter" ]
 };
 // console.log title of the recipe
+console.log(recipe.title);
 // console.log 'Servings: recipe servings'
+console.log(recipe.servings, 'servings');
 //console.log the ingredients one by one
+for (let i = 0;i < recipe.ingredients.length; i++) {
+  console.log(recipe.ingredients[i])
+};
+
 
 //Task2
 
@@ -22,12 +28,33 @@ let programming = {
 };
 
 // Write the command to add the language "Go" to the end of the languages array.
+programming.languages.push("Go")
+for (let i = 0; i< programming.languages.length;i++) {
+  console.log (programming.languages[i])
+};
 // Change the difficulty to the value of 7.
+programming.difficulty = 7;
+console.log(programming.difficulty);
 // Using the delete keyword, write the command to remove the jokes key from the programming object.
+delete programming.jokes;
+console.log (programming.jokes);
 // Write the command to add a new key called isFun and a value of true to the programming object.
+programming.IsFun = true;
+console.log(programming.IsFun);
 // Using a loop, iterate through the languages array and console.log all of the languages.
+for (let i=0; i<programming.languages.length;i++) {
+  console.log(programming.languages[i])
+};
 // Using a loop, console.log all of the keys in the programming object.
+for (let index in programming) {
+  console.log(index);
+}
 // Using a loop, console.log all of the values in the programming object.
+for (let property in programming) {
+  console.log(programming[property]);
+}
+
+
 
 // Task3
 
