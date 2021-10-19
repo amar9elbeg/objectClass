@@ -2,41 +2,68 @@ console.log("here Test");
 
 // Create an object to hold information on your favorite recipe. It should have properties for title (a string), servings (a number), and ingredients (an array of strings).
 const recipe = {
-  title: "Mole",
-  servings: 2,
-  ingredients: ["cumin", "cinnamon", "cocoa"],
+    title: "Mole",
+    servings: 2,
+    ingredients: ["cumin", "cinnamon", "cocoa", "butter"],
 };
 // console.log title of the recipe
+console.log(recipe.title);
 // console.log 'Servings: recipe servings'
+console.log(`Servings ${recipe.servings}`);
 //console.log the ingredients one by one
+console.log(recipe.ingredients)
+for (let i = 0; i < recipe.ingredients.length; i++) {
+    console.log(recipe.ingredients[i])
+};
+
 
 //Task2
 
 let programming = {
-  languages: ["JavaScript", "Python", "Ruby"],
-  isChallenging: true,
-  isRewarding: true,
-  difficulty: 8,
-  jokes:
-    "http://stackoverflow.com/questions/234075/what-is-your-best-programmer-joke",
+    languages: ["JavaScript", "Python", "Ruby"],
+    isChallenging: true,
+    isRewarding: true,
+    difficulty: 8,
+    jokes: "http://stackoverflow.com/questions/234075/what-is-your-best-programmer-joke",
 };
 
 // Write the command to add the language "Go" to the end of the languages array.
-// Change the difficulty to the value of 7.
-// Using the delete keyword, write the command to remove the jokes key from the programming object.
-// Write the command to add a new key called isFun and a value of true to the programming object.
-// Using a loop, iterate through the languages array and console.log all of the languages.
+programming.languages.push("Go")
+for (let i = 0; i < programming.languages.length; i++) {
+    console.log(programming.languages[i])
+};
+console.log(programming.languages)
+    // Change the difficulty to the value of 7.
+programming.difficulty = 7
+console.log(programming.difficulty)
+    // Using the delete keyword, write the command to remove the jokes key from the programming object.
+delete programming.jokes
+console.log(programming.jokes)
+    // Write the command to add a new key called isFun and a value of true to the programming object.
+programming.isFun = true
+console.log(programming.isFun)
+    // Using a loop, iterate through the languages array and console.log all of the languages.
+for (let i = 0; i < programming.languages.length; i++) {
+    console.log(programming.languages[i])
+};
 // Using a loop, console.log all of the keys in the programming object.
+for (let ymnuud in programming) {
+    console.log(ymnuud)
+};
+
 // Using a loop, console.log all of the values in the programming object.
+for (let value in programming) {
+    console.log(programming[value])
+};
 
 // Task3
 
 // 19. Pick a penguin from Wikipedia's List of Fictional Penguins and create an object named myPenguin with properties that represent the information listed in each column on that Wikipedia page (for example: the character's name, origin, and author).
 
 var myPenguin = {
-  character: "Tootsie the Penguin",
-  origin: "Donald Duck",
-  notes: 'A baby penguin in the classic 1939 cartoon "Donald\'s Penguin".',
+    character: "Tootsie the Penguin",
+    origin: "Donald Duck",
+    notes: 'A baby penguin in the classic 1939 cartoon "Donald\'s Penguin".',
 };
 
 // 20. Use console.log() to print the penguin's name to the console as part of a welcome message, like "Hello, I'm a penguin and my name is [NAME HERE]!"
@@ -70,9 +97,9 @@ var myPenguin = {
 const latte = { name: "Cafe Latte", price: 4, category: "Drinks" };
 const burger = { name: "Burger", price: 18, category: "Lunch" };
 const breakfastBurrito = {
-  name: "Breakfast Burrito",
-  price: 16,
-  category: "Breakfast",
+    name: "Breakfast Burrito",
+    price: 16,
+    category: "Breakfast",
 };
 
 //  write a function to return more menu items with the same format as the items above. */

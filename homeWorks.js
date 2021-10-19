@@ -8,6 +8,12 @@ cuisine_type
 city
 rating
 */
+const restaurant = {
+    name: "Cheesecake Factory",
+    cuisine_type: "New York style",
+    city: "Chantilly",
+    rating: 4,
+};
 
 // Task 2
 
@@ -16,9 +22,10 @@ Create a function called 'getName' that accepts an object as a parameter
 and returns the name of the restaurant
 */
 
-function getName(/* code here */) {
-  /* code here */
-}
+function getName(restaurant) {
+    return restaurant.name
+};
+
 
 /* Uncomment the console.log() to check your work */
 // console.log(getName(restaurant))
@@ -33,11 +40,14 @@ Change the cuisine_type to 'American'
 */
 
 let bestRestaurant = {
-  name: "Mr. Shabu",
-  cuisine_type: "Asian",
-  rating: 5,
-  city: "Salt Lake City",
+    name: "Mr. Shabu",
+    cuisine_type: "Asian",
+    rating: 5,
+    city: "Salt Lake City",
 };
+bestRestaurant.name = "Zest Kitchen"
+bestRestaurant.cuisine_type = "American"
+bestRestaurant.owner = "Gordon Ramsey"
 
 /* Uncomment the console.log() to check your work */
 // console.log(bestResturant.owner) // 'Gordon Ramsey'
@@ -56,28 +66,28 @@ If it doesn't return the string `Looks like I'll be cooking tonight`
 */
 
 let shabu = {
-  name: "Mr. Shabu",
-  cuisine_type: "Asian",
-  rating: 5,
-  city: "Salt Lake City",
+    name: "Mr. Shabu",
+    cuisine_type: "Asian",
+    rating: 5,
+    city: "Salt Lake City",
 };
 
 let alberto = {
-  name: "Casa de Alberto",
-  cuisine_type: "Mexican",
-  rating: 3,
-  city: "Los Angeles",
+    name: "Casa de Alberto",
+    cuisine_type: "Mexican",
+    rating: 3,
+    city: "Los Angeles",
 };
 
 let curryHouse = {
-  name: "Bombay House",
-  cuisine_type: "Indian",
-  rating: 5,
-  city: "Phoenix",
+    name: "Bombay House",
+    cuisine_type: "Indian",
+    rating: 5,
+    city: "Phoenix",
 };
 
-function whereToEat(/* code here */) {
-  /* code here */
+function whereToEat() {
+
 }
 
 /* Uncomment the console.log() to check your work */
@@ -90,27 +100,27 @@ function whereToEat(/* code here */) {
 // Task 5
 
 const person = {
-  name: ["Bob", "Smith"],
-  age: 32,
-  gender: "male",
-  interests: ["music", "skiing"],
-  bio: function () {
-    alert(
-      this.name[0] +
-        " " +
-        this.name[1] +
-        " is " +
-        this.age +
-        " years old. He likes " +
-        this.interests[0] +
-        " and " +
-        this.interests[1] +
-        "."
-    );
-  },
-  greeting: function () {
-    alert("Hi! I'm " + this.name[0] + ".");
-  },
+    name: ["Bob", "Smith"],
+    age: 32,
+    gender: "male",
+    interests: ["music", "skiing"],
+    bio: function() {
+        alert(
+            this.name[0] +
+            " " +
+            this.name[1] +
+            " is " +
+            this.age +
+            " years old. He likes " +
+            this.interests[0] +
+            " and " +
+            this.interests[1] +
+            "."
+        );
+    },
+    greeting: function() {
+        alert("Hi! I'm " + this.name[0] + ".");
+    },
 };
 // write the function return My name is Bob and my last name is Smith
 // console.log bob age and gender
